@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.DetailActivity">
+
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:src="@drawable/kirito"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/detail_bk"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="40dp"
+            android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTenTruyen"
+
+                android:layout_marginHorizontal="30dp"
+                android:text="Sword Art Online"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTenTacGia"
+                android:text="Trịnh Viết Tuyến"
+                android:layout_marginHorizontal="30dp"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvNamXuatBan"
+                android:text="Năm cuất bản: 2023"
+                android:textSize="17sp"
+                android:layout_marginHorizontal="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvMoTaNgan"
+                android:text="Sword Art Online (SAO) là câu chuyện xoay quanh Kirito, một game thủ giỏi, bị mắc kẹt trong một trò chơi thực tế ảo. Để sống sót và thoát khỏi trò chơi, anh ta phải vượt qua tất cả các tầng trong lâu đài Aincrad và đánh bại quái vật cuối cùng. Trong hành trình này, Kirito tạo mối quan hệ với những người chơi khác và đối diện với nhiều thử thách nguy hiểm."
+                android:textSize="17sp"
+                android:layout_margin="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:text="Bình luận"
+                android:textSize="30dp"
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <EditText
+                        android:layout_weight="9"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:hint="Viết bình luận"
+                        android:textSize="17sp"
+                        android:id="@+id/et_comment"
+                        android:background="@drawable/custom_edittext"
+                        android:padding="10dp"
+                        />
+
+                    <Button
+                        android:id="@+id/btnSend"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_alignRight="@+id/et_comment"
+                        android:background="@drawable/baseline_send_24"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:id="@+id/id_recycleview"
+                android:layout_marginHorizontal="30dp"
+                ></androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+        </ScrollView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnRead"
+            android:text="Read now"
+            android:textSize="20sp"
+            android:paddingVertical="10dp"
+            android:layout_margin="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/camdo"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

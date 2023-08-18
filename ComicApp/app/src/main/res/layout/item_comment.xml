@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/xam"
+        android:paddingVertical="13dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvNguoiDung"
+            android:text="Trịnh Viết Tuyến"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvComment"
+            android:text="Truyện hay quá!!!"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="15dp"
+            />
+        <EditText
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtCommentUpdate"
+            android:textSize="17sp"
+            android:layout_marginHorizontal="15dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="5dp"
+            android:gravity="center"
+            >
+            <Button
+                android:id="@+id/btnEditComment"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:padding="0dp"
+                android:text="ok"
+                android:layout_marginHorizontal="10dp"
+                />
+
+            <Button
+                android:id="@+id/btnHuy"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone"
+                android:padding="0dp"
+                android:text="hủy"
+                android:layout_marginHorizontal="10dp"
+                />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvThoigian"
+            android:text="9:33"
+            android:textSize="13sp"
+            android:layout_marginHorizontal="15dp"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
